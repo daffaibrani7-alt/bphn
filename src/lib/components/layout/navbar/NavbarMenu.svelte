@@ -29,12 +29,12 @@
 							: 'border-transparent text-white hover:border-white hover:text-white'
 					}`}
 				>
-					{item.title}
+					{item.title} ({item.children?.length ?? 0})
 					<ChevronDown size={16} />
 				</button>
 
 				<div
-					class="invisible absolute left-0 top-full z-50 mt-2 w-64 rounded-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100"
+					class="absolute left-0 top-full z-[9999] mt-2 w-64 rounded-2xl border border-slate-200 bg-white p-2 shadow-xl"
 				>
 					{#each item.children as child}
 						<a

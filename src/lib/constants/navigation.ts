@@ -49,7 +49,12 @@ export const navigation: NavItem[] = [
 	},
 	{
 		title: 'Tentang BPHN',
-		children: []
+		children: [
+			{
+				title: 'Profil Pejabat',
+				href: '/profil-pejabat'
+			}
+		]
 	},
 	{
 		title: 'Reformasi Birokrasi',
