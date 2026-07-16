@@ -1,0 +1,35 @@
+<script lang="ts">
+	import type { Official } from '$lib/types/official';
+
+	const {
+		official,
+		onClick
+	}: {
+		official: Official;
+		onClick: (official: Official) => void;
+	} = $props();
+</script>
+
+<button
+	type="button"
+	class="group overflow-hidden rounded-2xl bg-white text-left shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
+	on:click={() => onClick(official)}
+>
+	<div class="aspect-[3/4] overflow-hidden bg-slate-100">
+		<img
+			src={official.image}
+			alt={official.name}
+			class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+		/>
+	</div>
+
+	<div class="bg-[#163B74] p-5">
+		<h3 class="text-lg font-bold text-yellow-300">
+			{official.name}
+		</h3>
+
+		<p class="mt-2 text-sm leading-6 text-white/80">
+			{official.position}
+		</p>
+	</div>
+</button>

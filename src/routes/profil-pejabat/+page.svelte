@@ -13,13 +13,21 @@
 <main>
 	<Hero />
 
-	<section class="py-20">
-		<div class="mx-auto flex max-w-7xl gap-12 px-6">
-			<Sidebar />
+	<section class="bg-[#FAFAFA] py-14 lg:py-16">
+		<div class="mx-auto max-w-7xl px-6 lg:px-8">
 
-			<div class="flex-1">
-				<OfficialGrid />
+			<div class="grid gap-8 lg:grid-cols-[260px_1fr] lg:gap-12">
+
+				<aside>
+					<Sidebar />
+				</aside>
+
+				<div>
+					<OfficialGrid />
+				</div>
+
 			</div>
+
 		</div>
 	</section>
 </main>

@@ -25,4 +25,13 @@ export const officials: Official[] = [
 		category: 'structural',
 		biography: `Lorem ipsum dolor sit amet.`
 	}
+,
+	{
+		id: 99,
+		name: 'Contoh Pejabat',
+		position: 'Penyuluh Hukum Ahli Utama',
+		image: '/images/officials/contoh.png',
+		category: 'functional',
+		biography: 'Lorem ipsum dolor sit amet.'
+	}
 ];

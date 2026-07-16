@@ -34,7 +34,7 @@
 				</button>
 
 				<div
-					class="absolute left-0 top-full z-[9999] mt-2 w-64 rounded-2xl border border-slate-200 bg-white p-2 shadow-xl"
+					class="invisible absolute left-0 top-full z-[9999] mt-2 w-64 translate-y-2 rounded-2xl border border-slate-200 bg-white p-2 opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100"
 				>
 					{#each item.children as child}
 						<a
